@@ -54,12 +54,27 @@
 - k8s_namespace.tf # Kubernetes Namespace 매니페스트 파일
 ```
 ## 준비
+> 사용자 터미널에서 Minikube 클러스터 시작
+```bash
+$ minikube start
+* Microsoft Windows 10 Home 10.0.19043 Build 19043 의 minikube v1.25.2
+* 기존 프로필에 기반하여 docker 드라이버를 사용하는 중
+* minikube 클러스터의 minikube 컨트롤 플레인 노드를 시작하는 중
+* 베이스 이미지를 다운받는 중 ...
+* Restarting existing docker container for "minikube" ...
+* 쿠버네티스 v1.23.3 을 Docker 20.10.12 런타임으로 설치하는 중
+  - kubelet.housekeeping-interval=5m
+* Kubernetes 구성 요소를 확인...
+  - Using image gcr.io/k8s-minikube/storage-provisioner:v5
+* 애드온 활성화 : storage-provisioner, default-storageclass
+* 끝났습니다! kubectl이 "minikube" 클러스터와 "default" 네임스페이스를 기본적으로 사용하도록 구성되었습니다.
+```
 > 사용자 터미널에서 `AWS Credential` 정보를 환경 변수로 설정
 ```sh
 $ export TF_VAR_aws_access_key=<AWS Access Key ID>
 $ export TF_VAR_aws_secret_key=<AWS Secret Access KEY>
 ```
-> 현재 아래 입력 변수 파일 `variables.tf`에서 Region은 한국 리전을 기본으로 사용 합니다.
+> 현재 아래 입력 변수 파일 `variables.tf`에서 Region은 한국 리전을 기본으로 사용
 ```sh
 ////////////////////////
 /// Common Variables
