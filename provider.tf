@@ -1,7 +1,6 @@
 ///////////////////////////////////////////
-//              Provider
+//            AWS  Provider
 ///////////////////////////////////////////
-// AWS Provider
 provider "aws" {
   profile = var.profile
   region  = "ap-northeast-2"
@@ -14,9 +13,10 @@ provider "aws" {
   }
 }
 
-// Kubernetes Provider
+///////////////////////////////////////////
+//         Kubernetes  Provider
+///////////////////////////////////////////
 provider "kubernetes" {
-  alias                  = "minikube"
-  config_path            = "~/.kube/config"
-  config_context_cluster = "minikube"
+  config_path    = "~/.kube/config"
+  config_context = "minikube"
 }
