@@ -251,7 +251,7 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
     task-job-4mwjl   0/1     Completed   0          112s
     ```
 
-4. `minikube` 클러스터 노드에서 호스트 경로(HostPath)를 볼륨으로 사용하여 `/tmp/task-volume/final_list_날짜.csv` 파일로 실행 결과를 저장합니다. 아래 실행 결과는 AccessKey를 생성하고 `150일` 동안 교체하지 않은 `IAM UserName`, `AccessKeyId`, `CreateDate`에 대한 내용을 포함하는 `IAM USER`를 저장합니다.
+4. `minikube` 클러스터 노드에서 호스트 경로(HostPath)를 볼륨으로 사용하여 `/tmp/task-volume/final_list_날짜.csv` 파일로 실행 결과를 저장합니다. 아래 실행 결과는 AccessKey를 생성하고 `150일` 이상 교체하지 않은 `IAM UserName`, `AccessKeyId`, `CreateDate`에 대한 내용을 포함하는 `IAM USER`를 저장합니다.
     ```sh
     root@minikube:/tmp/task-volume# cat final_list_20220228.csv
     chloe.kim AKIAQWOA54DN4EL3ZEH3 2021-06-14 259
