@@ -24,7 +24,7 @@ variable "profile" {
   default     = "default"
 }
 
-variable "accesskey_unused_days" {
+variable "accesskey_unreplaced_day" {
   description = "AWS "
   type        = string
   default     = "AWS IAM Unused Accesskey Days"
@@ -42,6 +42,7 @@ variable "k8s_namespace" {
 variable "aws_access_key" {
   type        = string
   description = "AWS Access Key"
+  sensitive   = true
 
   validation {
     condition     = length(var.aws_access_key) == 20
@@ -53,6 +54,7 @@ variable "aws_access_key" {
 variable "aws_secret_key" {
   type        = string
   description = "AWS Secret Access Key"
+  sensitive   = true
 
   validation {
     condition     = length(var.aws_secret_key) == 40

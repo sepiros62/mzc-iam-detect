@@ -3,7 +3,7 @@
 ///////////////////////
 name    = "task"
 region  = "ap-northeast-2"
-profile = "musinsa"
+#profile = "musinsa"
 
 ////////////////////////
 ///   k8s Variables
@@ -11,4 +11,4 @@ profile = "musinsa"
 k8s_namespace         = "task-nm"
 create_k8s_job        = true
 create_k8s_cronjob    = true
-accesskey_unused_days = "200"
+accesskey_unreplaced_day = "10"

@@ -99,9 +99,9 @@ done
 paste first_list_${DATE_FORMAT}.csv second_list_${DATE_FORMAT}.csv > final_list_${DATE_FORMAT}.csv
 
 awk '{
- if ($4>'"$DAYS"') { print $1,$2,$3,$4 }
- else { "NO" }
- }' final_list_${DATE_FORMAT}.csv | tee /scrit/result/final_list_${DATE_FORMAT}.csv
+  if ($4>'"$DAYS"') { print $1,$2,$3,$4 }
+  else { "NO" }
+}' final_list_${DATE_FORMAT}.csv | tee /scrit/result/final_list_${DATE_FORMAT}.csv
 
 rm -f first_list_${DATE_FORMAT}.csv second_list_${DATE_FORMAT}.csv
 }

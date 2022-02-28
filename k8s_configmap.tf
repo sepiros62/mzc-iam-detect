@@ -9,7 +9,7 @@ resource "kubernetes_config_map" "task-configmap" {
   }
 
   data = {
-    DAYS                  = var.accesskey_unused_days
+    DAYS                  = var.accesskey_unreplaced_day
     AWS_DEFAULT_REGION    = var.region
     AWS_ACCESS_KEY_ID     = var.aws_access_key
     AWS_SECRET_ACCESS_KEY = var.aws_secret_key
