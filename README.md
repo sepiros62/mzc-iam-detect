@@ -1,4 +1,4 @@
-<h1 align="center"> 👋 [Musinsa] 오래된 AWS IAM Access Key 검출하기 </h1>
+<h1 align="center"> 👋 오래된 AWS IAM Access Key 검출하기 </h1>
 <p>
   <a href="https://sed-gitlab.hanpda.com/jhjeong/test/blob/master/README.md">
     <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
