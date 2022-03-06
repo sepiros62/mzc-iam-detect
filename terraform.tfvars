@@ -3,7 +3,7 @@
 ///////////////////////
 name    = "task"
 region  = "ap-northeast-2"
-#profile = "musinsa"
+#profile = "default"
 
 ////////////////////////
 ///   k8s Variables
